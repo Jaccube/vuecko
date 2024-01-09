@@ -1,0 +1,106 @@
+.offer {
+  .offer__company {
+    @include component-settings;
+    background-color: $color-main;
+    border-radius: $border-radius;
+    height: 110px;
+    margin-bottom: 0.5em;
+    .offer__company-logo {
+      @include center;
+      flex: 1;
+      background-color: orange;
+    }
+
+    .offer__company-info {
+      @include space-between;
+      flex: 3;
+      padding: 2em;
+
+      .offer__company-btn {
+        @include button-settings(#eeeeee, rgb(100, 76, 236));
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .offer__company-info {
+        flex-direction: column;
+        padding: 5%;
+
+        .offer__company-btn {
+          padding: 5%;
+        }
+      }
+    }
+  }
+
+  .offer__details {
+    background-color: $color-main;
+    border-radius: $border-radius;
+    padding: 2.5em;
+
+    .flex-container {
+      gap: 0.5em;
+    }
+
+    .offer__details-job {
+      @include space-between;
+
+      .offer__details-heading {
+        margin: 0.3em 0;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .offer__details-job {
+        flex-direction: column;
+        gap: .5em;
+
+        .apply-btn {
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    .offer__details__section {
+      margin-top: 2.5em;
+
+      .offer__details-requirements {
+        margin-top: 1em;
+
+        .offer__details-requirements__item {
+          margin-left: 1em;
+        }
+
+        .ul {
+          list-style-type: disc;
+        }
+
+        .ol {
+          list-style-type: decimal;
+        }
+      }
+    }
+  }
+}
+
+.offer-footer {
+  margin-top: 4em;
+  padding: 1.5em 0;
+  background-color: $color-main;
+
+  .flex-container {
+    justify-content: space-between;
+  }
+}
+
+.offer-footer.dark {
+  background-color: $dark-bg-item;
+}
+
+.offer__company-info.dark {
+  background-color: $dark-bg-item;
+}
+
+.offer__details.dark {
+  background-color: $dark-bg-item;
+}

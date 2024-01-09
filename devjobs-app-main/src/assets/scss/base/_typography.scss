@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-weight: $font-bold;
+  font-size: 0.8em;
+  letter-spacing: 0.3px;
+}
+
+.main-header {
+  .main-header__heading {
+    font-weight: $font-bold;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: $text-light;
+  }
+}
+
+.card {
+  .flex-container,
+  .card__job-company {
+    color: $text-grey;
+  }
+
+  .card__job-location {
+    font-weight: $font-bold;
+    color: rgb(100, 76, 236);
+  }
+
+  .card__job-name {
+    color: $text-dark;
+  }
+
+  .card__job-name.dark {
+    color: $text-light;
+  }
+}
+
+.search-form__item {
+  label {
+    font-weight: $font-bold;
+  }
+}
+
+.offer {
+  .offer__company-name {
+    font-size: 1.5em;
+  }
+
+  .offer__company-name.dark {
+    color: $text-light;
+  }
+
+  .offer__company-site {
+    font-weight: $font-regular;
+    font-size: 0.9em;
+    color: $text-grey;
+  }
+
+  .offer__details {
+    .offer__details-time {
+      font-weight: $font-regular;
+      font-size: 15px;
+      color: $text-grey;
+    }
+
+    .offer__details-heading.dark {
+      color: $text-light;
+    }
+
+    .offer__details-type {
+      font-weight: $font-regular;
+      font-size: 15px;
+      color: $text-grey;
+    }
+
+    .offer__details-splitter {
+      color: $text-grey;
+    }
+  }
+
+  .offer__details-job {
+    .offer__details-heading {
+      font-weight: $font-bold;
+      font-size: 26px;
+      color: $text-dark;
+    }
+  }
+
+  .offer__details-location {
+    font-weight: $font-bold;
+    font-size: 15px;
+    color: $text-emphasized;
+  }
+
+
+  .offer__details__section {
+    .offer__details-sub-heading {
+      font-weight: $font-bold;
+      font-size: 20px;
+      letter-spacing: .4px;
+    }
+
+    .offer__details-paragraph {
+      font-weight: $font-regular;
+      font-size: 16px;
+      line-height: 24px;
+      color: $text-grey;
+    }
+
+    .offer__details-requirements__item {
+      font-weight: $font-regular;
+      font-size: 16px;
+      line-height: 26px;
+      color: $text-grey;
+    }
+  }
+}
+
+.offer-footer {
+  .offer-footer__company-name {
+    color: $text-grey;
+  }
+  
+  .offer-footer__company-position {
+    line-height: 18px;
+  }
+
+  .offer-footer__company-position.dark {
+    color: $text-light;
+  }
+}
+
+.search-input.dark {
+  color: $text-light;
+}
+
+.label-dark {
+  color: $text-light;
+}
+
+.offer__details-sub-heading.dark {
+  color: $text-light;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.body-dark {
+    background-color: #101830;
+}
+
+.body-light {
+    background-color: #F0F0F0;   
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+}

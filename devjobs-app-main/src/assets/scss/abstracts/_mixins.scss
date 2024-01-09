@@ -1,0 +1,29 @@
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin component-settings {
+    position: relative;
+    bottom: 1.5em;
+    z-index: 150;
+}
+
+@mixin button-settings ($background-color, $color) {
+    background-color: $background-color;
+    border-radius: 4px;
+    padding: 1em 2em;
+    color: $color;
+    cursor: pointer;
+}
